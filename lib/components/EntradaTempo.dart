@@ -18,7 +18,7 @@ class EntradaTempo extends StatelessWidget {
         Text(
           titulo,
           style: const TextStyle(
-            fontSize: 25
+            fontSize: 25,
           ),
         ),
         const SizedBox(height: 10),
@@ -27,14 +27,14 @@ class EntradaTempo extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {},
-              child: Icon(
-                Icons.arrow_downward,
-                color: Colors.white,
-              ),
               style: ElevatedButton.styleFrom(
                 shape: const CircleBorder(),
                 padding: const EdgeInsets.all(15),
-                primary: Colors.red,
+                backgroundColor: Colors.red,
+              ),
+              child: const Icon(
+                Icons.arrow_downward,
+                color: Colors.white,
               ),
             ),
             Text(
@@ -45,18 +45,18 @@ class EntradaTempo extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                shape: const CircleBorder(),
+                padding: const EdgeInsets.all(15),
+                backgroundColor: Colors.red,
+              ),
               child: const Icon(
                 Icons.arrow_upward,
                 color: Colors.white,
               ),
-              style: ElevatedButton.styleFrom(
-                shape: CircleBorder(),
-                padding: EdgeInsets.all(15),
-                primary: Colors.red,
-              ),
             ),
           ],
-        )
+        ),
       ],
     );
   }
